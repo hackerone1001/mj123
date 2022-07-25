@@ -8,8 +8,8 @@ export default defineConfig({
   shopify: () => ({
     defaultLanguageCode: 'EN',
     defaultCountryCode: 'CA',
-    storeDomain: 'h1-2102-h13.myshopify.com',
-    storefrontToken: '8e106bdc2020f524ea2b6e272332ec21',
+    storeDomain: Oxygen.env.SHOPIFY_STORE_DOMAIN,
+    storefrontToken: Oxygen.env.SHOPIFY_STOREFRONT_API_PUBLIC_TOKEN,
     storefrontApiVersion: '2022-07',
   }),
   session: CookieSessionStorage('__session', {
